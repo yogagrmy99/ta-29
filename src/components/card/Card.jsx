@@ -68,9 +68,14 @@ const ColumnCard = styled.div
 
 `
 
-function CardInfo(props) {
-    return (
-        <div></div>
+function CardInfo(props){
+    return(
+        <div>
+            <Image src={props.src}/><br/>
+            <a>{props.nama}</a><br/>
+            <a>{props.nim}</a>
+        </div>
+
     )
 }
 

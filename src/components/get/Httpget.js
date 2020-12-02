@@ -23,10 +23,12 @@ class Httpget extends Component {
         this.setState({
             a_jokes: this.a
         });
-        //document.getElementById('pict').src = this.state.img;
+        document.getElementById('pict').src = this.state.img;
     };
 
     ganti = () => {
+        document.getElementById('spons').src = require("../../assets/sddefault.jpg");
+        document.getElementById('spons1').src = "";
     }
 
     jalan = () => {
@@ -88,10 +90,11 @@ class Httpget extends Component {
     render() {
         return (
             <div>
-                <img src={require("../../assets/sddefault.jpg")} width="200px"></img>
+                <img src={require("../../assets/sddefault.jpg")} width="200px" id="spons1"></img>
                 <div className="boxWhite">
                     <center>
                         <h1>What are you looking for?</h1>
+                        <img src="" width="100px" id="spons"></img>
                         <h2>a motivation?</h2>
                         <h3>here we go again...</h3>
                     </center>
